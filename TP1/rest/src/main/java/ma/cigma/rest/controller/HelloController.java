@@ -3,7 +3,7 @@ package ma.cigma.rest.controller;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-@RestController
+/*@RestController
 public class HelloController {
     @RequestMapping(value = {"/hello","/"})
     public String hello() {
@@ -11,3 +11,4 @@ public class HelloController {
         return "Hello World From my first API @RestControler";
     }
 }
+ */
