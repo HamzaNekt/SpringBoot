@@ -34,7 +34,7 @@ public class ProductController {
         return new ResponseEntity<>("Product created successfully", HttpStatus.CREATED);
     }
 
-    @PutMapping(value = "/api/product/{id}")
+    @PutMapping(value = "/api/products/{id}")
     public ResponseEntity<Object> update(@PathVariable (name = "id") Long id,@RequestBody Product product) {
         Product productfound = ProductService.getById(id);
         if(productfound == null) {

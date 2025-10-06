@@ -24,7 +24,6 @@ public class WebController {
     @GetMapping(value = "/products")
     public String ListProducts(Model model)
     {
-        String url = "http://localhost:8080/api/products";
         List <Product> products = productService.getAll();
 
         model.addAttribute("products", products);
