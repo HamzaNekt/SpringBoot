@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rest app</title>
+        <style>
+            body {
+                font-family : Arial, sans-serif;
+                padding : 0;
+                margin : 0;
+            }
+
+            nav {
+                background-color : black;
+                padding : 10px;
+                margin-bottom : 10px;
+                display : flex;
+                flex-direction : row;
+                gap : 10px;
+                justify-content: center;
+             }
+
+            nav a {
+                color : white;
+            }
+
+            h1 {
+                text-align : center;
+            }
+
+            p {
+                text-align : center;
+            }
+
+            .image-container{
+                display : flex;
+                flex-direction : row;
+                justify-content : center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a th:href="@{/}">Accueil</a>
+            <a th:href="@{/products}">Liste des produits</a>
+        </nav>
+
+        <h1>Bienvenu sur la page d'accueil du TP1</h1>
+        <p>Veuillez selectionner l'une des options ci-dessus</p>
+        <div class="image-container">
+            <img th:src="@{/images/spring-boot-logo.png}"
+                 class="sb-picture"
+                 alt="spring boot logo"
+            />
+        </div>
+
+    </body>
+</html>
